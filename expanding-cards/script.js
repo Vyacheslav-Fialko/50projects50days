@@ -5,6 +5,10 @@ function changeClass() {
     if(this.classList.contains('active')){
         return false
     }
-    document.querySelector('.panel.active').classList.remove('active')
+    removeActivePanelClass();
     this.classList.add('active');
+}
+
+function removeActivePanelClass() {
+    document.querySelector('.panel.active').classList.remove('active');
 }
